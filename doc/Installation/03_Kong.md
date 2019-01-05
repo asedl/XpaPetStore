@@ -16,13 +16,13 @@ Fire up Kong and Postgres DB for Kong:
 
 Kong and Postgres database should now be up and running, you can verify if thats indeed the case:
 > docker ps -a 
-[kong_docker_1](./start_kong_screen_001.JPG)
+![screen1: docker ps -a](./start_kong_screen_001.JPG)
 
 > curl http://localhost:8000/
-[kong_docker_2](./start_kong_screen_002.JPG)
+![screen2: kong api port](./start_kong_screen_002.JPG)
 
 > curl http://localhost:8001/
-[kong_docker_3](./start_kong_screen_003.JPG)
+![screen3: kong admin port](./start_kong_screen_003.JPG)
 
 ## Start Konga (Kong dashboard)
 
@@ -31,7 +31,7 @@ Open a command promptry amd change to Konga directory:
 
 Install required node modules and start Konga:
 > npm i & npm start
-[konga](./start_kong_screen_004.JPG)
+![screen3: started konga](./start_kong_screen_004.JPG)
 
 Kong and Konga should now run, you can point your browser to following location to log in to Konga:
 http://localhost:1337
