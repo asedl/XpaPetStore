@@ -1,0 +1,30 @@
+ <Application>
+ 
+<Header>
+
+  <Version val="13030.00"/>
+
+  <WithIsn val="Y"/>
+
+  <Exe comp="-1"/>
+
+  <LastIsn val="9"/>
+
+  <LastIsnFolder val="0"/>
+
+  <Folders/>
+
+</Header>
+ <DataSourceRepository>
+  <DataObjects>
+ 
+<DataObject Resident="N" UniqueISNConvState="12" data_source="SQLite Database" id="2" offset="213" length="420"/> 
+<DataObject PhysicalName="Orders" Resident="N" UniqueISNConvState="12" data_source="XPAPetStore" id="3" name="Orders" offset="634" length="6200"/> 
+<DataObject PhysicalName="Category" Resident="N" UniqueISNConvState="12" data_source="XPAPetStore" id="4" name="Category" offset="6835" length="1859"/> 
+<DataObject PhysicalName="User" Resident="N" UniqueISNConvState="12" data_source="XPAPetStore" id="5" name="User" offset="8695" length="5594"/> 
+<DataObject PhysicalName="Tags" Resident="N" UniqueISNConvState="12" data_source="XPAPetStore" id="6" name="Tags" offset="14290" length="1851"/> 
+<DataObject PhysicalName="Pets" Resident="N" UniqueISNConvState="12" data_source="XPAPetStore" id="7" name="Pets" offset="16142" length="3272"/> 
+<DataObject PhysicalName="Pets_Photos" Resident="N" UniqueISNConvState="12" data_source="XPAPetStore" id="8" name="Pets_Photos" offset="19415" length="3361"/> 
+<DataObject PhysicalName="Pets_Tags" Resident="N" UniqueISNConvState="12" data_source="XPAPetStore" id="9" name="Pets_Tags" offset="22777" length="2762"/>  </DataObjects>
+ </DataSourceRepository>
+ <LastModified val="30712946146318096"/>  </Application>

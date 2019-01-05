@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="a765ad3c-7813-4444-b9f3-283aca8861db" activeEnvironment="Default" name="RESTHeart" resourceRoot="" soapui-version="5.4.0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:testSuite id="56b90cc4-ff5b-43ab-93ed-59dc8d3d5c0d" name="TestSuite 1">
+    <con:settings/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="a0f366b4-d5cd-4baa-9059-9eeadf7ca3b4" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true">
+      <con:settings/>
+      <con:testStep type="httprequest" name="HTTP Request" id="ba3dca9c-0a8e-48ca-8edc-e4f25f818af5">
+        <con:settings/>
+        <con:config method="PUT" xsi:type="con:HttpRequest" id="6d209691-bf4f-4aed-b1ba-2b23f39e2078" name="HTTP Request" postQueryString="false" mediaType="application/json" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:8080/db/coll01</con:endpoint>
+          <con:request>{ "name": "doc01" }</con:request>
+          <con:credentials>
+            <con:username>admin</con:username>
+            <con:password>changeit</con:password>
+            <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
+            <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+            <con:authType>Global HTTP Settings</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="httprequest" name="CreateCollection" id="ad8df9d4-0753-4481-bcd9-3e4a5b23306c">
+        <con:settings/>
+        <con:config method="PUT" xsi:type="con:HttpRequest" id="6d209691-bf4f-4aed-b1ba-2b23f39e2078" name="CreateCollection" postQueryString="false" mediaType="application/json" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:8080/db</con:endpoint>
+          <con:request>{ "desc": "XpaRestDemo"}</con:request>
+          <con:credentials>
+            <con:username>admin</con:username>
+            <con:password>changeit</con:password>
+            <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
+            <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+            <con:authType>Global HTTP Settings</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="httprequest" name="GetCollection" id="7bd5caf7-1078-493b-946f-5f08c5ce1012">
+        <con:settings/>
+        <con:config method="GET" xsi:type="con:HttpRequest" id="6d209691-bf4f-4aed-b1ba-2b23f39e2078" name="GetCollection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:8080/magic</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:username>admin</con:username>
+            <con:password>changeit</con:password>
+            <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
+            <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+            <con:authType>Global HTTP Settings</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="httprequest" name="CreateDocument #1" id="d1743b41-3c4b-46b9-ac94-88e320312c27">
+        <con:settings/>
+        <con:config method="GET" xsi:type="con:HttpRequest" id="6d209691-bf4f-4aed-b1ba-2b23f39e2078" name="CreateDocument #1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:8080/db</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:username>admin</con:username>
+            <con:password>changeit</con:password>
+            <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
+            <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+            <con:authType>Global HTTP Settings</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="httprequest" name="CreateDocument #2" id="dccf0783-6c1d-4af3-be70-988d6770e101">
+        <con:settings/>
+        <con:config method="POST" xsi:type="con:HttpRequest" id="6d209691-bf4f-4aed-b1ba-2b23f39e2078" name="CreateDocument #2" postQueryString="false" mediaType="application/json" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:8080/db/coll01</con:endpoint>
+          <con:request>{ name:"MongoDB", "rating": "super cool" }</con:request>
+          <con:credentials>
+            <con:username>admin</con:username>
+            <con:password>changeit</con:password>
+            <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
+            <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+            <con:authType>Global HTTP Settings</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="httprequest" name="GetAllDocuments" id="c96e9a12-38bd-40f1-9340-82a4eafb74d7">
+        <con:settings/>
+        <con:config method="GET" xsi:type="con:HttpRequest" id="6d209691-bf4f-4aed-b1ba-2b23f39e2078" name="GetAllDocuments" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:8080/db/coll01</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:username>admin</con:username>
+            <con:password>changeit</con:password>
+            <con:selectedAuthProfile>Basic</con:selectedAuthProfile>
+            <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+            <con:authType>Global HTTP Settings</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+    </con:testCase>
+    <con:properties/>
+  </con:testSuite>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:sensitiveInformation/>
+</con:soapui-project>
