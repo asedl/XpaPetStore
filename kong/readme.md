@@ -31,3 +31,6 @@ Install required node modules and start Konga:
 
 Kong and Konga should now run, you can point your browser to following location to log in to Konga:
 http://localhost:1337
+
+
+
